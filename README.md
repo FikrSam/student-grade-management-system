@@ -41,3 +41,28 @@ The application is organized into 11 single-purpose functions in `grade_manager.
 
 - **Grading Scale:** `A` (90.00–100.00), `B` (80.00–89.99), `C` (70.00–79.99), `D` (60.00–69.99), `F` (< 60.00).
 - **Validation:** Empty IDs, duplicate IDs, blank/numeric-only names, non-numeric marks, `NaN`/`Inf`, and values outside `[0, 100]` raise `ValueError` with descriptive feedback.
+
+## 5. Project Structure
+
+```text
+student-grade-management-system/
+├── grade_manager.py        # Core application logic and CLI (164 non-blank, non-comment LOC; 11 functions)
+├── test_grade_manager.py   # Automated unit test suite (22 tests)
+├── psp/
+│   └── estimates.md        # Pre-work PSP estimates
+└── README.md               # Project specification, design, and usage (6 sections)
+```
+
+## 6. Usage and Running Tests
+
+Run the interactive program:
+
+```bash
+python3 grade_manager.py
+```
+
+Run the automated unit test suite:
+
+```bash
+python3 -m unittest -v
+```
